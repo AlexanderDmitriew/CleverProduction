@@ -8,21 +8,22 @@
        > У каждого разработчика своя ветка с наименованием <Фамилия. ИО>. После внесения изменений она сливается в Dev.
        > В каждый коммит осознано добавляем описание что было сделано.
 
----
-
 2. Дополнительно настраиваем перенос кода из одного репа в другой по джобе в дженкинс или гитлаб
-   `cd <name_rep_new>
-git checkout master
-git remote add r1remote **url-of-rep_new**
-git fetch r1remote
-git merge r1remote/master --allow-unrelated-histories
-git remote rm r1remote`
-3. Обязательно добавь в свой конфиг следующие строки
-   `git config --global user.name "<User Name>"
+   
+   ` cd <name_rep_new> `  
+` git checkout master `  
+` git remote add r1remote **url-of-rep_new** `  
+` git fetch r1remote `  
+` git merge r1remote/master --allow-unrelated-histories `  
+` git remote rm r1remote `  
 
-git config --global user.email "<emal@email>"
+4. Обязательно добавь в свой конфиг следующие строки
 
-git config --global alias.history 'log --graph'`
+` git config --global user.name <User_name> `  
+` git config --global user.email <emal@email> `  
+` git config --global alias.history "log --graph" `  
+
+---
 
 ## Инструкция для новичков
 
@@ -32,8 +33,9 @@ git config --global alias.history 'log --graph'`
 2. Создать ветку со своей Фамилией.ИО
    `git checkout -b <ТвояФамилия.ИО>`
 3. После этого можешь приступать к работе с кодом. Как только ты выполнишь работу сохрани изменения в гит
-   `git status - посмотри какие файлы изменены
-git add <файлы, который ты поменял>
-git commit -m 'Сообщение с описанием что ты сделал'
-git push origin <Твоя ветка>`
-4. Зайди на Github в репозиторий проекта и создай pull request. В качестве проверяющего укажи своего тимлида.
+   
+   `git status - посмотри какие файлы изменены`  
+`git add <файлы, который ты поменял>`  
+`git commit -m 'Сообщение с описанием что ты сделал' `  
+`git push origin <Твоя ветка>`  
+5. Зайди на Github в репозиторий проекта и создай pull request. В качестве проверяющего укажи своего тимлида.
